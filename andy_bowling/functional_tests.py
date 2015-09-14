@@ -25,7 +25,7 @@ class NewVisitorTest(unittest.TestCase):
 
 		# He would like to learn more about Andy's database project.
 		# He clicks the link and is brought to a new page
-		self.browser.click('proj-button')
+		project_link.click()
 		self.assertIn('Project - Andy Bowling', self.browser.title)
 
 		# Satisfied, Bob returns to the home page
