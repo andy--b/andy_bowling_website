@@ -1,0 +1,3 @@
+db.sqlite3
+/andy_bowling/__pycache__
+*.pyc
