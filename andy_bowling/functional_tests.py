@@ -17,12 +17,18 @@ class NewVisitorTest(unittest.TestCase):
 
 		# He notices the page title and thinks "oh, how appropriate!"
 		self.assertIn('Home - Andy Bowling', self.browser.title)
-		self.fail('Finish the test!')
+		header_text = self.browser.find_element_by_tag_name('large').text
+		self.assertIn('ANDY BOWLING', header_text)
+		
+		project_link = self.browser.find_element_by_id('proj-button')
+		
 
 		# He would like to learn more about Andy's database project.
 		# He clicks the link and is brought to a new page
+		self.browser.click('proj-button')
+		self.assertIn('Project - Andy Bowling', self.browser.title)
 
 		# Satisfied, Bob returns to the home page
-
+		self.fail('Finish the test!')
 if __name__ == '__main__':
 	unittest.main(warnings='ignore')
