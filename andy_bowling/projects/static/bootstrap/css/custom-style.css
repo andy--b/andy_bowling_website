@@ -39,10 +39,11 @@ img.logo:hover{
 }
 
 .btn-primary{
-	background-color: #3c4630;
+	background-color: #60675d;
 	border-color: #1f4e00;
+	color:#FFFDDC;
 }
 
 .btn-primary:hover{
-	background-color: #567336;
+	background-color: #3c4630;
 }
