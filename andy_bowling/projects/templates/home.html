@@ -10,13 +10,13 @@
     <meta name="author" content="">
 
     <title>Home - Andy Bowling</title>
-	<link rel="shortcut icon" href="images/favicon.ico"/>
+	<link rel="shortcut icon" href="/static/bootstrap/images/favicon.ico"/>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/custom-style.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/custom-style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,13 +40,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html" id="top-link">Home</a>
+                <a class="navbar-brand" href="{% url "home" %}" id="top-link">Home</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav" id="navbar-links">
 					<li>
                         <a href="https://www.linkedin.com/in/andrewbowling" id="top-link">LinkedIn</a>
+                    </li>
+					<li>
+                        <a href="{% url "project" %}" id="top-link">Case Study</a>
                     </li>
 					<li>
                         <a href="https://github.com/andy--b/" id="top-link">GitHub</a>
@@ -84,12 +87,12 @@
 		<div class="jumbotron">
         <div class="row">
             <div margin-left = "300px" class="col-md-7">
-                <h6>Welcome!</h6>
+                <h2>Welcome!</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
             </div>
             <div class="col-md-5">
                 <a href="#">
-                    <img class="img-responsive" src="images/hasslehoff burger2.png" alt="">
+                    <img class="img-responsive" src="/static/bootstrap/images/hasslehoff burger2.png" alt="">
                 </a>
             </div>
         </div>
@@ -130,7 +133,7 @@
 			<div class="col-md-7">
 				<h2></h2>
                 <a href="https://www.codeeval.com/profile/andy--b/" >
-                    <img class="img-responsive center-block logo" src="images/codeeval.png" alt="">
+                    <img class="img-responsive center-block logo" src="/static/bootstrap/images/codeeval.png" alt="">
                 </a>
             </div>
             <div class="col-md-5">
@@ -148,17 +151,17 @@
 				<div class="row">
 					<div class="col-xs-4">
 						<a href="mailto:andrew.r.bowling@gmail.com">
-							<img class="img-responsive logo" src="images/email_icon.png" alt="">
+							<img class="img-responsive logo" src="/static/bootstrap/images/email_icon.png" alt="">
 						</a>
 					</div>
 					<div class="col-xs-4">
 						<a href="https://www.linkedin.com/in/andrewbowling">
-							<img class="img-responsive logo" src="images/linkedin.png" alt="">
+							<img class="img-responsive logo" src="/static/bootstrap/images/linkedin.png" alt="">
 						</a>
 					</div>
 					<div class="col-xs-4">
 						<a href="https://github.com/andy--b/">
-							<img class="img-responsive logo" src="images/github-rounded.png" alt="">
+							<img class="img-responsive logo" src="/static/bootstrap/images/github-rounded.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -181,10 +184,8 @@
 				<a href = "#">
                     <h4>Back to top</h4>
 				</a>
-				<p>Built with Bootstrap, powered by Django 1.8
-				<a href="http://chimera.labs.oreilly.com/books/1234000000754">
-				<br>Thanks to Harry Percival for his work on Test-Driven Development</a></p>
-                </div>
+				<p><br>Built with Bootstrap, powered by Django 1.8</p>
+				</div>
             </div>
             <!-- /.row -->
         </footer>
@@ -193,10 +194,10 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="/static/bootstrap/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 

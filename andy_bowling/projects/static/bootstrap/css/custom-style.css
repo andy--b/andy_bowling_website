@@ -13,7 +13,7 @@ footer {
     margin: 50px 0;
 }
 
-h6{
+h2{
 	font-size: 48px;
 	color: #0B0C0C;
 }
@@ -39,10 +39,10 @@ img.logo:hover{
 }
 
 .btn-primary{
-	background-color: #387e0b;
+	background-color: #3c4630;
 	border-color: #1f4e00;
 }
 
 .btn-primary:hover{
-	background-color: #1f4e00;
+	background-color: #567336;
 }
