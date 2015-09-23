@@ -47,3 +47,11 @@ img.logo:hover{
 .btn-primary:hover{
 	background-color: #3c4630;
 }
+
+a{
+	color:#27586b;
+}
+
+a:hover{
+	color:#04465f;
+}
