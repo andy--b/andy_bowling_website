@@ -15,10 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf import settings
 
 from projects import views
 
 urlpatterns = [
 	url(r'^project/$', views.project_page, name='project'),
 	url(r'^$', views.home_page, name='home'),
+	url(r'^resume/(?P<path>.*)$', 'django.views.static.serve', {
+            'document_root': settings.MEDIA_ROOT
+        }),
 ]

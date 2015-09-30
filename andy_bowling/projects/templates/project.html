@@ -1,5 +1,34 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<p>Coming soon!</p>
+    <div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<div class="row">
+					<div class="col-md-12">
+						<img class="img-responsive center-block logo" src="/static/bootstrap/images/truck_log.png" alt="">
+						<p class ="img-caption"><b><i>Sample form - entered in Excel, sent to SQL database via VBA and Python</i></b></p>
+					</div>
+					<div class="col-md-12">
+						<img class="img-responsive center-block logo" src="/static/bootstrap/images/hours_report.png" alt="">
+						<p class ="img-caption"><b><i>Sample reporting dashboard</i></b></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<h3>Case Study: Upgrading from Excel to SQL</h3>
+				<h5><strong>For growing businesses, Microsoft Excel does a ton of things really well.</strong></h5>
+				<p>At small scale, Excel can be a one-stop shop for scheduling, inventory management, 
+				database operations, and custom report generation, all without demanding much technical knowledge from the user or spreadsheet architect. But what happens when 
+				the business (and database) grows and workbook operations start to slow to a halt? (Estimates say this happens somewhere between 100,000 and 1,000,000 cells)</p>
+				<p>I recently had the opportunity to work with a manufacturing client encountering this exact issue. Keeping in mind that they were generally happy with their 
+				current Excel front-end (aside from the speed issues), I was challenged to build a robust, scalable back-end solution capable of handling millions of pieces of data.</p>
+				<p>Python has three great modules to help accomplish these goals:</p>
+				<p><strong>1. SQLite:</strong> For back-end management and large-scale database operations.
+				<br>    <strong>2. NumPy:</strong> Python’s famed matrix manipulation module, for fast data calculation.
+				<br>    <strong>3. XLSXwriter:</strong> To generate beautiful analytics reports that are viewable and modifiable in Excel.</p>
+				<p>Using Excel VBA modules to tie everything together, I was able to achieve a fast, scalable, modular solution that will survive well beyond the lifespan of a standard Excel workbook.</p>
+				<a class="btn btn-primary" href="{% url "home" %}">Return home<span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+		</div>
 {% endblock %}

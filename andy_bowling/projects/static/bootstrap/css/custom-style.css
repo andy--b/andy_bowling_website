@@ -55,3 +55,11 @@ a{
 a:hover{
 	color:#04465f;
 }
+
+#top-email:hover{
+	color:#5C5F60;
+}
+
+.img-caption{
+	text-align: center;
+}
