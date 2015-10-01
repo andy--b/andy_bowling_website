@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block title %}
+    <title>Project - Andy Bowling</title>
+{% endblock %}
+
 {% block content %}
     <div class="container">
 		<div class="row">
@@ -28,7 +32,7 @@
 				<br>    <strong>2. NumPy:</strong> Python’s famed matrix manipulation module, for fast data calculation.
 				<br>    <strong>3. XLSXwriter:</strong> To generate beautiful analytics reports that are viewable and modifiable in Excel.</p>
 				<p>Using Excel VBA modules to tie everything together, I was able to achieve a fast, scalable, modular solution that will survive well beyond the lifespan of a standard Excel workbook.</p>
-				<a class="btn btn-primary" href="{% url "home" %}">Return home<span class="glyphicon glyphicon-chevron-right"></span></a>
+				<a class="btn btn-primary" id="home-button" href="{% url "home" %}">Return home<span class="glyphicon glyphicon-chevron-right"></span></a>
 			</div>
 		</div>
 {% endblock %}
