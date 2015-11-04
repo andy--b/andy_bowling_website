@@ -63,3 +63,13 @@ a:hover{
 .img-caption{
 	text-align: center;
 }
+
+#home-update{
+	color: #b90e00;
+	margin-bottom: 20px;
+}
+
+#home-update a {
+	color: #1d1daa;
+	margin-bottom: 20px;
+}
